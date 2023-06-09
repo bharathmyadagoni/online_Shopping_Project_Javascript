@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping-Card</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <!-- <div class="web_page bg-dark text-white"> -->
+    <div class="header text-white">
+        <h3 class=head>Online Shopping</h3>
+        <nav>
+            <ul class="navlinks">
+                <li>Home</li>
+                <li>Products</li>
+                <button id="card-button" class="iconbutton"><a id="click" class="a">0</a><img class="icon" src="png-transparent-white-shopping-cart-illustration-computer-icons-shopping-cart-online-shopping-shopping-cart-icon-miscellaneous-angle-orange-thumbnail.png" width="40" height="40" /></button>
+        </nav>
+        <button class="button btn-danger text-white" id="rest">Clear Cart</button>
+    </div>
+    <div class="cart-details" id="cartRemove" >
+        <ul id="cart">
+            
+        </ul>
+    </div>
+    <div id="products-page">
+        <h1 class="name">Some Products</h1>
+        <div class="container-2">
+            <div class="Products">
+                <h4>Mobile Phone</h4>
+                <img src="5e90a856c7c8f9000434dd97.png" width="150px" />
+                <p>cost 50,000/-</p>
+                <button value="Mobile Phone" value="5e90a856c7c8f9000434dd97.png"  class="btnn" id="button1">Add to Cart</button>
+            </div>
+            <div class="Products">
+                <h4>Shoes</h4>
+                <img src="png-transparent-sneakers-basketball-shoe-sportswear-nike-shoe-outdoor-shoe-running-sneakers-thumbnail.png" width="150px" height="220" />
+                <p>cost 5,000/-</p>
+                <button value="Shoes" class="btnn" id="button2" onclick="onClickCounts()">Add to Cart</button>
+            </div>
+            <div class="Products">
+                <h4>Shirts</h4>
+                <img src="Long-Sleeve-Shirt-PNG.png" width="150px" height="220" />
+                <p>cost 2,000/-</p>
+                <button value="Shirts" class="btnn" id="button3" onclick="onClickCountss()">Add to Cart</button>
+            </div>
+        </div>
+        <h1 class="text-center p-4" style="font-size:20px;color:green;">THANK YOU FOR VISITING ONLINE SHOPPING</h1>
+    </div>
+    
+    <script src='index.js'></script>
+</body>
+
+</html>
